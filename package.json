@@ -1,12 +1,14 @@
 {
-  "name": "simple-next",
+  "name": "shizentai",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export",
+    "predeploy": "npm run build && npm run export"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",
