@@ -14,7 +14,7 @@ export default function Zigzag() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h2 mb-4">Modalidades</h1>
-            <p className="text-xl text-gray-600">melhora a flexibilidade, o controle do corpo e a resiliência mental, além de ser uma ferramenta eficaz para defesa pessoal.</p>
+            <p className="text-xl text-gray-600">Oferecemos uma diversidade de modalidades de artes marciais para todos os níveis, focando no desenvolvimento físico, mental e em autodefesa. Explore o treino ideal para você e inicie sua jornada de aprimoramento conosco.</p>
           </div>
 
           {/* Items */}

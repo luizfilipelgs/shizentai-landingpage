@@ -4,7 +4,7 @@ export const metadata = {
 }
 
 import Hero from '@/components/hero'
-import Features from '@/components/features'
+import About from '@/components/about'
 import TeamBlocks from '@/components/team-blocks'
 import Maps from '@/components/maps'
 import Zigzag from '@/components/zigzag'
@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Features />
+      <About />
       <Zigzag />
       <TeamBlocks />
       <Maps />
