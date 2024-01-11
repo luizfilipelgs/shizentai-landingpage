@@ -3,7 +3,9 @@
 import { useState, useRef, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
 import Image from 'next/image'
-import FeaturesBg from '@/public/images/hero-image.png'
+import missaoImg from '@/public/images/missão.webp'
+import principios from '@/public/images/principios.webp'
+import foco from '@/public/images/foco.webp'
 
 export default function About() {
   
@@ -23,7 +25,7 @@ export default function About() {
     <section className="relative pb-10">
 
       {/* Section background (needs .relative class on parent and next sibling elements) */}
-      <div className="absolute inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div>
+      <div className="absolute inset-0 bg-gray-900 pointer-events-none mb-16" aria-hidden="true"></div>
       <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
@@ -31,8 +33,8 @@ export default function About() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">Shizentai (自然体)</h1>
-            <p className="text-xl text-gray-600">"Corpo natural", é um princípio das artes marciais japonesas que enfatiza o equilíbrio e a eficiência física e mental. Em nossa academia, priorizamos este conceito, oferecendo um ambiente ideal e instrutores experientes para um treinamento que equilibra habilidades físicas e disciplina mental. Com turmas de tamanho limitado, garantimos uma experiência de aprendizado personalizada e eficaz, preparando os alunos para enfrentar desafios tanto nas artes marciais quanto na vida cotidiana.</p>
+            <h1 className="h2 mb-4 text-red-500">Shizentai (自然体)</h1>
+            <p className="text-xl text-gray-200">"Corpo natural", é um princípio das artes marciais japonesas que enfatiza o equilíbrio e a eficiência física e mental. Em nossa academia, priorizamos este conceito, oferecendo um ambiente ideal e instrutores experientes para um treinamento que equilibra habilidades físicas e disciplina mental. Com turmas de tamanho limitado, garantimos uma experiência de aprendizado personalizada e eficaz, preparando os alunos para enfrentar desafios tanto nas artes marciais quanto na vida cotidiana.</p>
           </div>
 
           {/* Section content */}
@@ -44,35 +46,35 @@ export default function About() {
               {/* Tabs buttons */}
               <div className="mb-8 md:mb-0">
                 <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'bg-black shadow-md border-gray-200 hover:shadow-lg text-white' : 'bg-gray-800 border-transparent text-gray-300'}`}
                   href="#0"
                   onClick={(e) => { e.preventDefault(); setTab(1); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Nossa missão</div>
-                    <div className="text-gray-600 text-justify">Nossa missão é disseminar os benefícios das artes marciais, fortalecendo indivíduos física e mentalmente, e promovendo bem-estar, disciplina e autoconfiança.</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1 text-red-500">Nossa missão</div>
+                    <div className="text-gray-300 text-justify">Nossa missão é disseminar os benefícios das artes marciais, fortalecendo indivíduos física e mentalmente, e promovendo bem-estar, disciplina e autoconfiança.</div>
                   </div>
                   
                 </a>
                 <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 2 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 2 ? 'bg-black shadow-md border-gray-200 hover:shadow-lg text-white' : 'bg-gray-800 border-transparent text-gray-300'}`}
                   href="#0"
                   onClick={(e) => { e.preventDefault(); setTab(2); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Partimos de princípios</div>
-                    <div className="text-gray-600 text-justify">Integridade, Honestidade, Respeito, Responsabilidade e Compromisso.</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1 text-red-500">Partimos de princípios</div>
+                    <div className="text-gray-300 text-justify">Integridade, Honestidade, Respeito, Responsabilidade e Compromisso.</div>
                   </div>
                   
                 </a>
                 <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 3 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 3 ? 'bg-black shadow-md border-gray-200 hover:shadow-lg text-white' : 'bg-gray-800 border-transparent text-gray-300'}`}
                   href="#0"
                   onClick={(e) => { e.preventDefault(); setTab(3); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Nosso foco</div>
-                    <div className="text-gray-600 text-justify">É a satisfação de nossos alunos , observando seu progresso em habilidades motoras, condicionamento físico e integração de valores culturais.</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1 text-red-500">Nosso foco</div>
+                    <div className="text-gray-300 text-justify">É a satisfação de nossos alunos , observando seu progresso em habilidades motoras, condicionamento físico e integração de valores culturais.</div>
                   </div>
                   
                 </a>
@@ -98,7 +100,7 @@ export default function About() {
                     unmount={false}                     
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg} width={500} height="462" alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded" src={missaoImg} width={450} height="462" alt="Features bg" />
                     </div>
                   </Transition>
                   {/* Item 2 */}
@@ -116,7 +118,7 @@ export default function About() {
                     unmount={false}                     
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg} width={500} height="462" alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded" src={principios} width={500} height="462" alt="Features bg" />
                     </div>
                   </Transition>
                   {/* Item 3 */}
@@ -134,7 +136,7 @@ export default function About() {
                     unmount={false}                     
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg} width={500} height="462" alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded" src={foco} width={500} height="462" alt="Features bg" />
                     </div>
                   </Transition>
                 </div>

@@ -20,7 +20,7 @@ export default function Maps() {
 
       <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
           <h2 className="h2 mb-4">Localização</h2>
-          <p className="text-xl text-gray-600">Avenida Empresário Valentim dos Santos Diniz, 130a - Serraria, Maceió - AL. 57046-770</p>
+          <p className="text-xl text-gray-300">Avenida Empresário Valentim dos Santos Diniz, 130a - Serraria, Maceió - AL. 57046-770</p>
       </div>
 
       <div className="flex justify-center items-center h-[30vh]">
