@@ -22,7 +22,7 @@ const teamList = [
   },
   {
     name: 'Eduardo Salomão',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Fisioterapeuta com especialização em Traumato Ortopedia e sócio fundador da academia. Atende tanto lesões ortopédicas quanto esportivas (Artes Marciais, Crossfit, Corrida, Beach Tennis...)',
     image: membro04,
   },
 ]
@@ -33,26 +33,25 @@ export default function TeamBlocks() {
 
       {/* Section background (needs .relative class on parent and next sibling elements) */}
       <div className="absolute inset-0 md:mt-24 lg:mt-0 bg-gray-900 pointer-events-none" aria-hidden="true"></div>
-      <div className="absolute left-0 right-0 bottom-0 m-auto w-px p-px h-20 bg-gray-200 transform translate-y-1/2"></div>
-
+      
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 mb-4">Time</h2>
-            <p className="text-xl text-gray-300">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
+            {/* <p className="text-xl text-gray-300">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p> */}
           </div>
 
           {/* Items */}
           <div className="mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-4 items-start md:max-w-3xl lg:max-w-none">
             {teamList.map((member) => (
-              <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl w-full h-[450px]">
+              <div className="relative flex flex-col items-center p-6 bg-gray-800 rounded shadow-xl w-full h-[450px]">
                 <div className="w-40 h-40 rounded-full overflow-hidden mb-5">
                   <Image className="w-full h-full object-contain" src={member.image} alt="foto do membro da equipe" />
                 </div>
                 <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">{member.name}</h4>
-                <p className="text-gray-600 text-center">{member.description}</p>
+                <p className="text-gray-100 text-center">{member.description}</p>
               </div>
             ))}
           </div>
