@@ -69,7 +69,7 @@ export default function ModalVideo({
               <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0 2C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-12 12z" />
               <path d="M10 17l6-5-6-5z" />
             </svg>
-            <span className="ml-3">Apresentação (2 min)</span>
+            <span className="ml-3">Apresentação (40 seg)</span>
           </button>
         </div>
       </div>
@@ -101,6 +101,15 @@ export default function ModalVideo({
             leaveFrom="oopacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
           >
+            <div className="max-w-6xl mx-auto h-full flex items-center justify-center">
+              <Dialog.Panel className="max-w-full h-full bg-black overflow-hidden flex justify-center items-center">
+                <video ref={videoRef} width={videoWidth} height={videoHeight} loop controls>
+                  <source src={video} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </Dialog.Panel>
+            </div>
+            {/* Opc video PC
             <div className="max-w-6xl mx-auto h-full flex items-center">
               <Dialog.Panel className="w-full max-h-full aspect-video bg-black overflow-hidden">
                 <video ref={videoRef} width={videoWidth} height={videoHeight} loop controls>
@@ -108,7 +117,8 @@ export default function ModalVideo({
                   Your browser does not support the video tag.
                 </video>
               </Dialog.Panel>
-            </div>
+            </div> 
+            */}
           </Transition.Child>
           {/* End: Modal dialog */}
 

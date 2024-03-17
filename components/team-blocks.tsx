@@ -1,6 +1,6 @@
 import membro01 from '@/public/images/damião.webp'
 import membro02 from '@/public/images/jefferson.webp'
-import membro03 from '@/public/images/bruna.webp'
+import membro03 from '@/public/images/barbara.jpeg'
 import membro04 from '@/public/images/eduardo.jpeg'
 import Image from 'next/image'
 
@@ -16,8 +16,8 @@ const teamList = [
     image: membro02,
   },
   {
-    name: 'Bruna Santiago',
-    description: 'Está no Muay Thai há pouco mais de 6 anos. Instrutora e atleta, também é uma das organizadoras da liga de Muay Thai feminino alagoano.',
+    name: 'Bárbara',
+    description: ' Atleta de MMA e Muay Thai, com passagem pelos Estados Unidos e Japão. Dona do cinturão do areia Muay Thai e Top 10 do ranking nacional. É grau preto de Muay Thai e Jiu jitsu. Instrutora de defesa para a polícia militar',
     image: membro03,
   },
   {
