@@ -1,4 +1,4 @@
-import VideoThumb from '@/public/images/hero-image.png'
+import VideoThumb from '@/public/images/hero-image.jpg'
 import ModalVideo from '@/components/modal-video'
 import Image from 'next/image'
 import logoHorizontal from '@/public/images/logo_horizontal.webp'

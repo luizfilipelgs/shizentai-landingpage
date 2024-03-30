@@ -100,7 +100,7 @@ export default function About() {
                     unmount={false}                     
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={missaoImg} width={450}  alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded" src={missaoImg} width={450} alt="Features bg" />
                     </div>
                   </Transition>
                   {/* Item 2 */}
@@ -118,7 +118,7 @@ export default function About() {
                     unmount={false}                     
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={principios} width={500} height="462" alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded" src={principios} width={450} alt="Features bg" />
                     </div>
                   </Transition>
                   {/* Item 3 */}
@@ -136,7 +136,7 @@ export default function About() {
                     unmount={false}                     
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={foco} width={500} height="462" alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded" src={foco} width={450} alt="Features bg" />
                     </div>
                   </Transition>
                 </div>
