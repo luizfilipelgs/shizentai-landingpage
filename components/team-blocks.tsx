@@ -1,7 +1,7 @@
 import membro01 from '@/public/images/damião.webp'
 import membro02 from '@/public/images/jefferson.webp'
 import membro03 from '@/public/images/barbara.jpeg'
-import membro04 from '@/public/images/eduardo.jpeg'
+import membro04 from '@/public/images/eduardo.webp'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -51,13 +51,17 @@ export default function TeamBlocks() {
           {/* Items */}
           <div className="mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-4 items-start md:max-w-3xl lg:max-w-none">
             {teamList.map((member) => (
-              <div className="relative flex flex-col justify-around items-center p-6 bg-gray-800 rounded shadow-xl w-full h-[650px]">
-                <div className="w-45 h-45 rounded-full overflow-hidden mb-5">
-                  <Image className="w-full h-full object-contain" src={member.image} alt="foto do membro da equipe" />
+              <div className="relative flex flex-col items-center p-6 bg-gray-800 rounded shadow-xl w-full h-[600px]">
+                <div className="w-30 h-30 rounded-full overflow-hidden mb-5">
+                  <Image 
+                    className="object-contain" 
+                    src={member.image} alt="foto do membro da equipe" 
+                    width={200} // Esses valores são exemplos
+                    height={200}/>
                 </div>
 
                 <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">{member.name}</h4>
-                <p className="max-h-60 text-gray-100 text-center p-2">{member.description}</p>
+                <p className="h-60 text-gray-100 text-center p-2">{member.description}</p>
                 <Link href={member.insta} target="_blank" className="flex justify-center items-center mt-8 text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Instagram">
                   <svg className="w-12 h-12 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="20.145" cy="11.892" r="1" />
