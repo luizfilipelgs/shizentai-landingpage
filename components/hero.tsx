@@ -1,4 +1,4 @@
-import VideoThumb from '@/public/images/hero-image.jpg'
+import VideoThumb from '@/public/images/hero-image.webp'
 import ModalVideo from '@/components/modal-video'
 import Image from 'next/image'
 import logoHorizontal from '@/public/images/logo_horizontal.webp'
@@ -15,9 +15,9 @@ export default function Hero() {
 
           {/* Section header */}
           <div className="text-center pb-12 md:pb-16">
-            <div className="text-center pb-12 md:pb-16">
+            {/* <div className="text-center pb-12 md:pb-16">
               <Image className="max-w-full mx-auto md:max-w-none h-auto" src={logoHorizontal} width={540} height={405} alt="Features 02" />
-            </div>
+            </div> */}
             {/* <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Make your website <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">wonderful</span></h1> */}
             <div className="max-w-3xl mx-auto">
               <p className="h3 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Transforme seu corpo e sua mente em nossa academia de Artes Marciais!</p>
@@ -43,7 +43,7 @@ export default function Hero() {
             thumbWidth={768}
             thumbHeight={432}
             thumbAlt="Modal video thumbnail"
-            video="https://www.youtube.com/watch?v=X7jWB6NMB74&ab_channel=InnovaComMarketing%26Communication"
+            video="https://www.youtube.com/embed/PM9aJddFEb0?rel=0"
             videoWidth={400}
             videoHeight={920} />
 
