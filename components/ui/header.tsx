@@ -31,7 +31,6 @@ export default function Header() {
           <div className="shrink-0 mr-4">
             <Logo />
           </div>
-
           
           {/* <nav className="hidden md:flex md:grow">
             
