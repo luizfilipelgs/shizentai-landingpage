@@ -16,7 +16,7 @@ const teamList = [
     image: membro02,
   },
   {
-    name: 'Bárbara',
+    name: 'Bárbara Acioly',
     description: ' Atleta de MMA e Muay Thai, com passagem pelos Estados Unidos e Japão. Dona do cinturão do areia Muay Thai e Top 10 do ranking nacional. É grau preto de Muay Thai e Jiu jitsu. Instrutora de defesa para a polícia militar',
     image: membro03,
   },
