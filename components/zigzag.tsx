@@ -3,7 +3,7 @@ import Image from 'next/image'
 import FeatImage01 from '@/public/images/jiu.webp'
 import FeatImage02 from '@/public/images/boxe.webp'
 import FeatImage03 from '@/public/images/muayThai.webp'
-import FeatImage04 from '@/public/images/Taekwondo.webp'
+import FeatImage04 from '@/public/images/judo.webp'
 
 export default function Zigzag() {
   return (
@@ -138,7 +138,7 @@ export default function Zigzag() {
             </div>
 
             {/* 4nd item */}
-            {/* <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
+            <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
               
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 rtl" data-aos="fade-up">
                 <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage04} width={540} height={405} alt="Features 02" />
@@ -146,31 +146,37 @@ export default function Zigzag() {
               
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
                 <div className="md:pl-4 lg:pl-12 xl:pl-16">
-                  <h2 className="h2 mb-3 text-center">Taekwondo</h2>
-                  <p className="text-xl text-gray-300 mb-4 text-justify">O taekwondo é uma arte marcial coreana conhecida por seus chutes altos e rápidos. Esta modalidade combina combate, autodefesa, exercício e filosofia. Diferenciando-se por sua ênfase em velocidade e agilidade, o taekwondo é tanto um esporte olímpico quanto uma prática de defesa pessoal. Os praticantes, conhecidos como taekwondistas, são treinados em padrões de movimento chamados poomsae, além de sparring e quebra de tábuas. O taekwondo favorece o desenvolvimento de coordenação, flexibilidade e força mental.</p>
+                  <h2 className="h2 mb-3 text-center">Judô</h2>
+                  <p className="text-xl text-gray-300 mb-4 text-justify">O Judô, arte marcial japonesa que significa "Caminho da Gentileza", vai além da luta. Ele combina técnicas de projeção e imobilização com princípios de respeito e disciplina. Ao treinar quedas, randori (luta livre) e katas (sequências coreografadas), o Judô oferece diversos benefícios para todas as idades. Crianças desenvolvem habilidades motoras, coordenação, disciplina e autoconfiança. Já para adultos, o Judô melhora a saúde física e mental, combate o estresse, fortalece os ossos e proporciona bem-estar geral. É um caminho de aprimoramento contínuo para corpo e mente.</p>
                   <ul className="text-lg text-gray-300 -mb-2">
                     <li className="flex items-center mb-2">
                       <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span>Chutes Altos e Rápidos</span>
+                      <span>Segunda, quarta e sexta: 6h às 7h</span>
                     </li>
                     <li className="flex items-center mb-2">
                       <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span>Velocidade e Agilidade</span>
+                      <span>2x na semana: R$ 100</span>
+                    </li>
+                    <li className="flex items-center mb-2">
+                      <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                      </svg>
+                      <span>3x na semana: R$ 130</span>
                     </li>
                     <li className="flex items-center">
                       <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span>Coordenação e Flexibilidade</span>
+                      <span>Judô com Defesa Pessoal</span>
                     </li>
                   </ul>
                 </div>
               </div>
-            </div> */}
+            </div>
 
           </div>
 

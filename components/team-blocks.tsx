@@ -1,7 +1,8 @@
 import membro01 from '@/public/images/damião.webp'
 import membro02 from '@/public/images/jefferson.webp'
 import membro03 from '@/public/images/barbara.jpeg'
-import membro04 from '@/public/images/eduardo.webp'
+import membro04 from '@/public/images/rafael_lucas.jpg'
+import membro05 from '@/public/images/eduardo.webp'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -25,9 +26,15 @@ const teamList = [
     insta: "https://www.instagram.com/bah_acioly.mma/"
   },
   {
+    name: 'Rafael Lucas',
+    description: 'Esta no Judô desde 2008, é faixa marrom e estuda Judô tradicional desde 2018. Além do Judô Olímpico, ensina defesa pessoal (Atemi-waza). Dedica-se a um ambiente acolhedor e motivador para todos os níveis.',
+    image: membro04,
+    insta: "https://www.instagram.com/judo_de_verdade"
+  },
+  {
     name: 'Eduardo Salomão',
     description: 'Fisioterapeuta com especialização em Traumato Ortopedia e sócio fundador da academia. Atende tanto lesões ortopédicas quanto esportivas (Artes Marciais, Crossfit, Corrida, Beach Tennis...)',
-    image: membro04,
+    image: membro05,
     insta: "https://www.instagram.com/eduardosalomaor/"
   },
 ]
@@ -49,7 +56,7 @@ export default function TeamBlocks() {
           </div>
 
           {/* Items */}
-          <div className="mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-4 items-start md:max-w-3xl lg:max-w-none">
+          <div className="mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-3xl lg:max-w-none">
             {teamList.map((member) => (
               <div className="relative flex flex-col items-center p-6 bg-gray-800 rounded shadow-xl w-full h-[600px]">
                 <div className="w-30 h-30 rounded-full overflow-hidden mb-5">
