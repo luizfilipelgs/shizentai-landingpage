@@ -25,12 +25,12 @@ const teamList = [
     image: membro03,
     insta: "https://www.instagram.com/bah_acioly.mma/"
   },
-  {
+  /* {
     name: 'Rafael Lucas',
     description: 'Esta no Judô desde 2008, é faixa marrom e estuda Judô tradicional desde 2018. Além do Judô Olímpico, ensina defesa pessoal (Atemi-waza). Dedica-se a um ambiente acolhedor e motivador para todos os níveis.',
     image: membro04,
     insta: "https://www.instagram.com/judo_de_verdade"
-  },
+  }, */
   {
     name: 'Eduardo Salomão',
     description: 'Fisioterapeuta com especialização em Traumato Ortopedia e sócio fundador da academia. Atende tanto lesões ortopédicas quanto esportivas (Artes Marciais, Crossfit, Corrida, Beach Tennis...)',

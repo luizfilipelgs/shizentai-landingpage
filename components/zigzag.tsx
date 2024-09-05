@@ -3,7 +3,7 @@ import Image from 'next/image'
 import FeatImage01 from '@/public/images/jiu.webp'
 import FeatImage02 from '@/public/images/boxe.webp'
 import FeatImage03 from '@/public/images/muayThai.webp'
-import FeatImage04 from '@/public/images/judo.webp'
+// import FeatImage04 from '@/public/images/judo.webp'
 
 export default function Zigzag() {
   return (
@@ -118,7 +118,13 @@ export default function Zigzag() {
                       <svg className="w-3 h-3 fill-current text-red-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span>Terça e Quinta: 21:15 às 22:15</span>
+                      <span>Terça e Quinta: 07:00 às 08:00</span>
+                    </li>
+                    <li className="flex items-center mb-2">
+                      <svg className="w-3 h-3 fill-current text-red-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                      </svg>
+                      <span>Segunda, Quarta e Sexta: 21:15 às 22:15</span>
                     </li>
                     <li className="flex items-center mb-2">
                       <svg className="w-3 h-3 fill-current text-red-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -138,7 +144,7 @@ export default function Zigzag() {
             </div>
 
             {/* 4nd item */}
-            <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
+            {/* <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
               
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 rtl" data-aos="fade-up">
                 <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage04} width={540} height={405} alt="Features 02" />
@@ -176,7 +182,7 @@ export default function Zigzag() {
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> */}
 
           </div>
 
