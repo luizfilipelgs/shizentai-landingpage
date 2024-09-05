@@ -56,7 +56,7 @@ export default function TeamBlocks() {
           </div>
 
           {/* Items */}
-          <div className="mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-3xl lg:max-w-none">
+          <div className="mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-4 items-start md:max-w-3xl lg:max-w-none">
             {teamList.map((member) => (
               <div className="relative flex flex-col items-center p-6 bg-gray-800 rounded shadow-xl w-full h-[600px]">
                 <div className="w-30 h-30 rounded-full overflow-hidden mb-5">
