@@ -1,8 +1,9 @@
 import VideoThumb from '@/public/images/hero-image.webp'
 import ModalVideo from '@/components/modal-video'
-import { FaCalendarAlt } from "react-icons/fa";
+import { IoCalendarOutline } from "react-icons/io5";
+import { CiCircleList } from "react-icons/ci";
 
-import { schedulingLink } from '@/utils/links'
+import { plansLink, schedulingLink } from '@/utils/links'
 
 export default function Hero() {
   return (
@@ -24,10 +25,14 @@ export default function Hero() {
                 {/* <div>
                   <a className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Start free trial</a>
                 </div> */}
-                <div>
-                  <a className="flex gap-4 items-center bg-gray-200 hover:bg-gray-100 text-black mx-2 py-2 px-4 rounded w-full sm:w-auto" href={schedulingLink} target="_blank">
+                <div className="flex gap-4">
+                  <a className="flex gap-4 items-center bg-yellow-300 hover:bg-yellow-200 text-black mx-2 py-2 px-4 rounded w-full sm:w-auto" href={schedulingLink} target="_blank">
                     Agende uma aula experimental
-                    <FaCalendarAlt className="w-8 h-8 fill-current" />
+                    <IoCalendarOutline className="w-8 h-8 fill-current" />
+                  </a>
+                  <a className="flex gap-4 items-center bg-yellow-300 hover:bg-yellow-100 text-black mx-2 py-2 px-4 rounded w-full sm:w-auto" href={plansLink} target="_blank">
+                    Conheça nossos planos 
+                    <CiCircleList  className="w-8 h-8 fill-current" />
                   </a>
                 </div>
               </div>
