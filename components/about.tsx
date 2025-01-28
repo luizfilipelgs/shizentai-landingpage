@@ -8,7 +8,7 @@ import principios from '@/public/images/principios.webp'
 import foco from '@/public/images/foco.webp'
 
 export default function About() {
-  
+
   const [tab, setTab] = useState<number>(1)
 
   const tabs = useRef<HTMLDivElement>(null)
@@ -57,7 +57,7 @@ export default function About() {
 
             {/* Content */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
-              
+
               {/* Tabs buttons */}
               <div className="mb-8 md:mb-0">
                 <a
@@ -69,7 +69,7 @@ export default function About() {
                     <div className="font-bold leading-snug tracking-tight mb-1 text-red-500">Nossa missão</div>
                     <div className="text-gray-300 text-justify">Nossa missão é disseminar os benefícios das artes marciais, fortalecendo indivíduos física e mentalmente, e promovendo bem-estar, disciplina e autoconfiança.</div>
                   </div>
-                  
+
                 </a>
                 <a
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 2 ? 'bg-gray-900 shadow-md border-gray-200 hover:shadow-lg text-white' : 'bg-gray-800 border-transparent text-gray-300'}`}
@@ -80,7 +80,7 @@ export default function About() {
                     <div className="font-bold leading-snug tracking-tight mb-1 text-red-500">Partimos de princípios</div>
                     <div className="text-gray-300 text-justify">Integridade, Honestidade, Respeito, Responsabilidade e Compromisso.</div>
                   </div>
-                  
+
                 </a>
                 <a
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 3 ? 'bg-gray-900 shadow-md border-gray-200 hover:shadow-lg text-white' : 'bg-gray-800 border-transparent text-gray-300'}`}
@@ -91,7 +91,29 @@ export default function About() {
                     <div className="font-bold leading-snug tracking-tight mb-1 text-red-500">Nosso foco</div>
                     <div className="text-gray-300 text-justify">É a satisfação de nossos alunos , observando seu progresso em habilidades motoras, condicionamento físico e integração de valores culturais.</div>
                   </div>
-                  
+
+                </a>
+                <a
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 4 ? 'bg-gray-900 shadow-md border-gray-200 hover:shadow-lg text-white' : 'bg-gray-800 border-transparent text-gray-300'}`}
+                  href="#0"
+                  onClick={(e) => { e.preventDefault(); handleTabClick(4); }}
+                >
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1 text-red-500">Nosso diferencial</div>
+                    <div className="text-gray-300 text-justify">Oferecemos um ambiente acolhedor e estruturado, onde cada aluno é incentivado a superar seus limites de forma segura e progressiva, com o suporte de profissionais qualificados.</div>
+                  </div>
+
+                </a>
+                <a
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 5 ? 'bg-gray-900 shadow-md border-gray-200 hover:shadow-lg text-white' : 'bg-gray-800 border-transparent text-gray-300'}`}
+                  href="#0"
+                  onClick={(e) => { e.preventDefault(); handleTabClick(5); }}
+                >
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1 text-red-500">Nosso compromisso com a comunidade</div>
+                    <div className="text-gray-300 text-justify">Buscamos impactar positivamente a sociedade, promovendo a inclusão e o acesso às artes marciais como ferramentas de transformação pessoal e social.</div>
+                  </div>
+
                 </a>
               </div>
             </div>
@@ -112,10 +134,10 @@ export default function About() {
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 -translate-y-16"
                     beforeEnter={() => heightFix()}
-                    unmount={false}                     
+                    unmount={false}
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={missaoImg} width={450} alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded" src={missaoImg} width={750} alt="Features bg" />
                     </div>
                   </Transition>
                   {/* Item 2 */}
@@ -130,10 +152,10 @@ export default function About() {
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 -translate-y-16"
                     beforeEnter={() => heightFix()}
-                    unmount={false}                     
+                    unmount={false}
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={principios} width={450} alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded" src={principios} width={750} alt="Features bg" />
                     </div>
                   </Transition>
                   {/* Item 3 */}
@@ -148,10 +170,46 @@ export default function About() {
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 -translate-y-16"
                     beforeEnter={() => heightFix()}
-                    unmount={false}                     
+                    unmount={false}
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={foco} width={450} alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded" src={foco} width={750} alt="Features bg" />
+                    </div>
+                  </Transition>
+
+                  <Transition
+                    show={tab === 4}
+                    appear={true}
+                    className="w-full"
+                    enter="transition ease-in-out duration-700 transform order-first"
+                    enterFrom="opacity-0 translate-y-16"
+                    enterTo="opacity-100 translate-y-0"
+                    leave="transition ease-in-out duration-300 transform absolute"
+                    leaveFrom="opacity-100 translate-y-0"
+                    leaveTo="opacity-0 -translate-y-16"
+                    beforeEnter={() => heightFix()}
+                    unmount={false}
+                  >
+                    <div className="relative inline-flex flex-col">
+                      <Image className="md:max-w-none mx-auto rounded" src={foco} width={750} alt="Features bg" />
+                    </div>
+                  </Transition>
+
+                  <Transition
+                    show={tab === 5}
+                    appear={true}
+                    className="w-full"
+                    enter="transition ease-in-out duration-700 transform order-first"
+                    enterFrom="opacity-0 translate-y-16"
+                    enterTo="opacity-100 translate-y-0"
+                    leave="transition ease-in-out duration-300 transform absolute"
+                    leaveFrom="opacity-100 translate-y-0"
+                    leaveTo="opacity-0 -translate-y-16"
+                    beforeEnter={() => heightFix()}
+                    unmount={false}
+                  >
+                    <div className="relative inline-flex flex-col">
+                      <Image className="md:max-w-none mx-auto rounded" src={foco} width={750} alt="Features bg" />
                     </div>
                   </Transition>
                 </div>

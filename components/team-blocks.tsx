@@ -1,8 +1,9 @@
 import membro01 from '@/public/images/damião.webp'
 import membro02 from '@/public/images/jefferson.webp'
 import membro03 from '@/public/images/barbara.jpeg'
-import membro04 from '@/public/images/rafael_lucas.jpg'
+import membro04 from '@/public/images/Graziele.png'
 import membro05 from '@/public/images/eduardo.webp'
+import membro06 from '@/public/images/Caroline.png'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -25,12 +26,18 @@ const teamList = [
     image: membro03,
     insta: "https://www.instagram.com/bah_acioly.mma/"
   },
-  /* {
-    name: 'Rafael Lucas',
-    description: 'Esta no Judô desde 2008, é faixa marrom e estuda Judô tradicional desde 2018. Além do Judô Olímpico, ensina defesa pessoal (Atemi-waza). Dedica-se a um ambiente acolhedor e motivador para todos os níveis.',
+  {
+    name: 'Graziele',
+    description: 'Desde 2019 compartilha sua paixão dando aulas e inspirando alunos. Atualmente com título de Kruang Marrom, Grazi cria treinos dinâmicos e acessíveis para todos os níveis – do iniciante ao avançado.',
     image: membro04,
-    insta: "https://www.instagram.com/judo_de_verdade"
-  }, */
+    insta: "https://www.instagram.com/_santgrazi/"
+  },
+  {
+    name: 'Caroline',
+    description: 'Faixa preta da Kimura e professora de Jiu-jitsu, com mais de 13 anos de experiência. Multicampeã em campeonatos regionais, nacionais e internacionais de Jiu-jitsu, incluindo o Sul-Americano da IBJJF, e por mais de 7 anos consecutivos, foi campeã alagoana pela FJETAL e LAJJ.',
+    image: membro06,
+    insta: "https://www.instagram.com/caroline_buarque/?g=5"
+  },
   {
     name: 'Eduardo Salomão',
     description: 'Fisioterapeuta com especialização em Traumato Ortopedia e sócio fundador da academia. Atende tanto lesões ortopédicas quanto esportivas (Artes Marciais, Crossfit, Corrida, Beach Tennis...)',
