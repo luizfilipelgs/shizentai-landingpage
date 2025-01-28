@@ -3,9 +3,11 @@
 import { useState, useRef, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
 import Image from 'next/image'
-import missaoImg from '@/public/images/missão.webp'
-import principios from '@/public/images/principios.webp'
-import foco from '@/public/images/foco.webp'
+import missaoImg from '@/public/images/missao.jpeg'
+import principios from '@/public/images/principios.jpeg'
+import foco from '@/public/images/foco.jpeg'
+import diferencialImg from '@/public/images/diferencial.jpeg'
+import compromissoImg from '@/public/images/compromisso.jpeg'
 
 export default function About() {
 
@@ -137,7 +139,7 @@ export default function About() {
                     unmount={false}
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={missaoImg} width={750} alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded" src={missaoImg} width={850} alt="Features bg" />
                     </div>
                   </Transition>
                   {/* Item 2 */}
@@ -155,7 +157,7 @@ export default function About() {
                     unmount={false}
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={principios} width={750} alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded" src={principios} width={600} alt="Features bg" />
                     </div>
                   </Transition>
                   {/* Item 3 */}
@@ -173,7 +175,7 @@ export default function About() {
                     unmount={false}
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={foco} width={750} alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded" src={foco} width={600} alt="Features bg" />
                     </div>
                   </Transition>
 
@@ -191,7 +193,7 @@ export default function About() {
                     unmount={false}
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={foco} width={750} alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded" src={diferencialImg} width={600} alt="Features bg" />
                     </div>
                   </Transition>
 
@@ -209,7 +211,7 @@ export default function About() {
                     unmount={false}
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={foco} width={750} alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded" src={compromissoImg} width={850} alt="Features bg" />
                     </div>
                   </Transition>
                 </div>
